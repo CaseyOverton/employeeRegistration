@@ -11,12 +11,9 @@ class manager extends employee {
   checkRole()  {
     return "manager";
      };
+getOfficeNumber() {
+  return this.officeNumber
+}
+};
+module.exports = manager;
 
-
-
-// const car = new Car(15, 'blue', carPassengers);
-
-console.log('---CAR---');
-car.printInfo();
-car.useHorn();
-car.checkPassengerLength();

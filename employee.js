@@ -1,9 +1,8 @@
 class employee {
-    constructor(name, id, email, role) {
-      this.name = name;
+    constructor(name, id, email) {
+      this.name = name; 
       this.id = id;
       this.email = email;
-      this.role = role;
     }
   
     printInfo() {
@@ -13,10 +12,22 @@ class employee {
       console.log(`Employer Role: ${this.role}`)
     }
 
+
+    getName() {
+      return this.name
+    }
+
+    getID() {
+      return this.id;
+    }
+    getEmail() {
+      return this.email
+    }
+    
     checkRole()  {
      return "employee";
       };
 
   }
-  module.exports = Vehicle;
+  module.exports = employee;
   
