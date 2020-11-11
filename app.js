@@ -100,7 +100,7 @@ const addIntern = () => {
    message: "What is your intern's school?",
 }
 ]).then(addMember => {
-    const intern = new Intern(addMember.internName, addMember.internID, addMember.internEmail, addMember.internSchool)
+    const intern = new Intern(addMember.internName, addMember.internId, addMember.internEmail, addMember.internSchool)
     employees.push(intern)
     teamAdd();
 })};
